@@ -57,31 +57,89 @@ header p {
   line-height: 1.8;
 }
 
-
-
 .hero-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 
-.hero-buttons a {
-  display: inline-block;
-  padding: 12px 22px;
+.hero-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 170px;
+  padding: 13px 24px;
+
   border-radius: 8px;
-  background: white;
-  color: #1565c0;
+
   text-decoration: none;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
 }
 
-.hero-buttons a:hover {
+.hero-buttons .btn-primary {
+  background: #ffffff;
+  color: #1565c0;
+
+  border: 2px solid #ffffff;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.hero-buttons .btn-primary:hover {
+  background: #eaf3ff;
+  color: #0d47a1;
+
   transform: translateY(-3px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
+
+.hero-buttons .btn-secondary {
+  background: #1565c0;
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background: #0d47a1;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.hero-buttons .btn-github {
+  background: transparent;
+  color: #ffffff;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero-buttons .btn-github:hover {
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
 
 
 #about {
